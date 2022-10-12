@@ -1,5 +1,5 @@
 package demo;
-
+//Static binding
 /*public class Binding {
 	private void display() {
 		System.out.println("samjhe");
@@ -11,6 +11,7 @@ public static void main(String[] args) {
 	
 }
 }*/
+//Dynamic binding
 class TestBinding {
 	void show() {
 		System.out.println("samjhe");
