@@ -1,18 +1,25 @@
 package Practical.com;
 
- interface Multiple_in1 {//1st parent interface
-	void show();
+ interface Mul {
+	 //1st parent interface
+ static int add (int a) {
+	 return a+a;
+ }
+	void display();//1st method
+	/*default void show() {//default method
+		System.out.println("Default method");
 	}
-interface Multiple_in2{//2nd parent interface
-	void show();}
-class Multiple_in implements Multiple_in1,Multiple_in2{
-		public void show() {
+	}*/
+
+class Demo123 implements Mul{
+		public void display() {
 			System.out.println("Hi");}
-			
+}		
 public static void main(String[] args) {
-	Multiple_in obj=new Multiple_in();
-	obj.show();
-	
+	Mul obj=new Demo123();
+	//obj.show();
+	obj.display();
+	System.out.println(Mul.add(3));
 	
 }
 }
