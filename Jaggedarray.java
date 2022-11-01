@@ -16,7 +16,7 @@ arr[i][j]=count++;
 	//print the jagged array
 	for(int i=0;i<arr.length;i++){//row
 		for(int j=0;j<arr[i].length;j++){//column
-System.out.println(arr[i][j]+" ");
+System.out.print(arr[i][j]+" ");
 }
 System.out.println();
 }}}
