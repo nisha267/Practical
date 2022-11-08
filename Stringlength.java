@@ -7,11 +7,11 @@ public class Stringlength {
 		int l=s.length();
 		System.out.println("The string length of " +s+ " is: "+l);
 		
-			System.out.println(s.startsWith("A"));
+			/*System.out.println(s.startsWith("A"));
 			System.out.println(s.endsWith("n"));
 			System.out.println(s.charAt(2));
 			System.out.println(s.trim());
-			System.out.println(s.concat(" Students"));
+			System.out.println(s.concat(" Students"));*/
 	}
 		
 	}
