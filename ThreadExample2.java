@@ -16,9 +16,24 @@ public class ThreadExample2 extends Thread{
 		ThreadExample2 t1=new ThreadExample2();
 		ThreadExample2 t2=new ThreadExample2();
 		ThreadExample2 t3=new ThreadExample2();
-		t1.start();
+		/*t1.start();
 		t2.run();
-		t3.run();
+		t3.run();*/
+		t1.start();
+		try {
+			t1.join();
+		}
+		catch (InterruptedException e) {
+			System.out.println(e);
+		}t2.start();
+		try {
+			t2.join();
+		}
+		catch (InterruptedException e) {
+			System.out.println(e);
+		}
+		t3.start();
+		}
+		
 	}
 
-}
